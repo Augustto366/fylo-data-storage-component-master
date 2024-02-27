@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100vw;
+    height: 100vh;
+    background: hsl(229, 57%, 11%) url(./images/bg-desktop.png) no-repeat bottom;
+    background-size: contain;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    width: 330px;
+    height: 185px;
+    padding: 30px;
+    border-radius: 5px 90px 5px 5px;
+    background-color: hsl(228, 56%, 26%);
+}
+
+.menu > .fylo {
+    width: 140px;
+}
+
+.menu > .dfu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dfu > img {
+    border-radius: 20%;
+    padding: 10px;
+    background-color: hsl(229, 57%, 11%);
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 480px;
+    height: 185px;
+    padding: 30px;
+    border-radius: 5px;
+    background-color: hsl(228, 56%, 26%);
+}
+
+.data > .used {
+    position: relative;
+    text-align: end;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    background-color: hsl(229, 57%, 11%);
+}
+
+.used > p {
+    margin-top: 3px;
+    margin-left: 3px;
+    border-radius: 10px;
+    width: 70%;
+    height: 14px;
+    background:linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%)) ;
+}
