@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'raleway';
+    src: url(./font/Raleway-Regular.ttf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -10,6 +15,7 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     gap: 30px;
     width: 100vw;
     height: 100vh;
@@ -21,11 +27,13 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    bottom: 70px;
     gap: 25px;
     width: 330px;
     height: 185px;
     padding: 30px;
-    border-radius: 5px 90px 5px 5px;
+    border-radius: 8px 90px 8px 8px;
     background-color: hsl(228, 56%, 26%);
 }
 
@@ -45,15 +53,64 @@ body, html {
     background-color: hsl(229, 57%, 11%);
 }
 
+.caixa {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 90%;
+    left: 62%;
+    font-family: raleway;
+    font-size: 14px;
+    font-weight: bolder;
+    color: hsl(229, 7%, 55%);
+    padding: 10px;
+    height: 70px;
+    width: 150px;
+    border-radius: 10px 10px 10px;
+    background-color: #fff;
+}
+
+.caixa > strong {
+    font-size: 2em;
+    font-weight: bolder;
+    color: #000;
+}
+
 .data {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    bottom: 51px;
+    gap: 15px;
     width: 480px;
-    height: 185px;
+    height: 150px;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 8px;
     background-color: hsl(228, 56%, 26%);
+}
+
+.data > p {
+    font-family: raleway;
+    color: #fff;
+    font-size: 14px;
+}
+
+.data > .harddisk {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -5px;
+    font-family: raleway;
+    color: #fff;
+    font-size: 14px;
+}
+
+.data > p > strong {
+    font-family: raleway;
+    color: #fff;
+    font-size: 14px;
 }
 
 .data > .used {
@@ -66,10 +123,20 @@ body, html {
 }
 
 .used > p {
+    position: relative;
+    bottom: 0.1px;
     margin-top: 3px;
     margin-left: 3px;
     border-radius: 10px;
     width: 70%;
-    height: 14px;
+    height: 15px;
     background:linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%)) ;
+}
+
+#emoji {
+    position: absolute;
+    bottom: 0.1px;
+    right: 0.1px;
+    font-size: 11px;
+    
 }
